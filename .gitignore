@@ -1,0 +1,8 @@
+*.vcf
+*.panel
+*.html
+*.txt
+sandbox/
+
+.DS_Store
+.ipynb_checkpoints/
