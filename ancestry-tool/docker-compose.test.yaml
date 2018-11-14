@@ -1,0 +1,11 @@
+version: '3'
+services:
+  sut:
+    image: ancestry-tool:latest
+    env_file: env/test.env
+    command: ["bash", "tests/test.sh"]
+#   app:
+#     image: illustrant:latest
+#     env_file: env/.env
+#     ports:
+#         - "8080:8080"

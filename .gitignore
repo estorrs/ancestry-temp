@@ -1,7 +1,11 @@
-*.vcf
+ALL.*.vcf
+1000*.vcf
+positions.tsv
+alleles.tsv
 *.panel
 *.html
 *.txt
+*.env
 sandbox/
 
 .DS_Store
