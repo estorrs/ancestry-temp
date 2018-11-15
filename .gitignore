@@ -4,7 +4,8 @@ positions.tsv
 alleles.tsv
 *.panel
 *.html
-*.txt
+notes.txt
+vc-1000*.txt
 *.env
 sandbox/
 
