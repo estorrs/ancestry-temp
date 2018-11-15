@@ -21,26 +21,12 @@ RUN (cd /vcftools; ./autogen.sh; ./configure; make; make install)
 COPY . /app
 WORKDIR /app
 
-CMD /bin/bash
-
-
-# COPY . /app
-# WORKDIR /app
-# 
-# # get plink
-# RUN wget --directory-prefix /app/ https://www.cog-genomics.org/static/bin/plink181012/plink_linux_x86_64.zip
-# RUN unzip /app/plink_linux_x86_64.zip
-# RUN rm plink_linux_x86_64.zip
-# 
-# # # get vcftools
-# RUN mkdir /app/vcftools
-# RUN git clone https://github.com/vcftools/vcftools.git /app/vcftools
-# RUN (cd /app/vcftools; ./autogen.sh; ./configure; make; make install)
+# CMD /bin/bash
 
 # ARG GITHUB_TOKEN
 # RUN echo $GITHUB_TOKEN
 # RUN pip3 install git+https://$GITHUB_TOKEN@github.com/TheRealInventr/elasticsearch-utils.git
 
 
-# CMD ./main.sh
+CMD ./main.sh
 
