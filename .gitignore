@@ -7,7 +7,9 @@ alleles.tsv
 notes.txt
 vc-1000*.txt
 *.env
+
 sandbox/
+ancestry-tool/app/outputs/
 
 .DS_Store
 .ipynb_checkpoints/
