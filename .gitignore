@@ -10,6 +10,7 @@ vc-1000*.txt
 
 sandbox/
 ancestry-tool/app/outputs/
+ancestry-tool/data/
 
 .DS_Store
 .ipynb_checkpoints/

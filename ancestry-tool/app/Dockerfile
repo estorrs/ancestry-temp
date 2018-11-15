@@ -21,12 +21,12 @@ RUN (cd /vcftools; ./autogen.sh; ./configure; make; make install)
 COPY . /app
 WORKDIR /app
 
-# CMD /bin/bash
+CMD /bin/bash
 
 # ARG GITHUB_TOKEN
 # RUN echo $GITHUB_TOKEN
 # RUN pip3 install git+https://$GITHUB_TOKEN@github.com/TheRealInventr/elasticsearch-utils.git
 
 
-CMD ./main.sh
+# CMD ./main.sh
 
