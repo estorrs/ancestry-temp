@@ -56,7 +56,7 @@ def filter_input_vcf(input_fp, compressed_input, position_filter_fp, variant_fil
     return OUTPUT_FOLDER + out_prefix + '.filtered.recode.vcf'
 
 
-def perform_pca(input_fp, maf=None, out_prefix=None):
+def perform_pca(input_fp, maf=None, out_prefix=''):
     tool_args = ['--vcf', input_fp]
 
     if maf:
@@ -78,7 +78,7 @@ def main():
         compressed_input = False
         input_file = args.vcf
 
-    # run through filter is position flag is given
+    # run through filter if position flag is given
     if args.position_filter:
         input_file = filter_input_vcf(input_file, compressed_input, args.position_filter,
                 variant_filter_fp=args.variant_filter, out_prefix=args.out)
